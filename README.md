@@ -4,7 +4,7 @@ __nvim python printer__ is a very simple plugin that does as told, it shows you 
 
 ## Dependencies
 
-the only thing you need is python3
+the only thing you need is python3, but you can also use tmux 3 or higher to better your experience
     
 ## installation
 
