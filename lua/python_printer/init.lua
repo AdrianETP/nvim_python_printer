@@ -26,7 +26,7 @@ M.setup = function(params)
         pattern  = { "*.py" },
         callback = function()
             if is_tmux() then
-                vim.fn.system('tmux display-popup -E "python3 ' .. vim.fn.expand("%:p") .. ' ; read p"')
+                vim.fn.system('tmux display-popup -E "python3 ' .. vim.fn.expand("%:p") .. '| less -R"')
             else
                 local bufnr = open_result_buffer()
                 vim.fn.jobstart({ "python3", vim.fn.expand("#:p") }, {
